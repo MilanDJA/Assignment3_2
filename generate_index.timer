@@ -1,0 +1,12 @@
+[Unit]
+Description=Run generate-index daily at 5:00
+# Gives description of file
+
+[Timer]
+OnCalendar= 05:00:00
+# Timer will run daily at 5 AM
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+# Timer starts when the system initializes
